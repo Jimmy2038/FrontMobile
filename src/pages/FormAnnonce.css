@@ -1,0 +1,59 @@
+ion-select.always-flip::part(icon) {
+    transition: transform 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+ion-select.always-flip.select-expanded::part(icon) {
+    transform: rotate(180deg);
+}
+
+ion-select.never-flip::part(icon) {
+    transform: none;
+}
+
+/* styles.css */
+.custom-file-input {
+    /* Cacher le bouton de parcourir par défaut */
+    display: none;
+}
+
+.custom-file-input ~ .custom-file-label::after {
+    /* Personnaliser l'apparence du bouton de parcourir */
+    content: 'Choisir un fichier';
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.custom-file-input:focus ~ .custom-file-label::after {
+    /* Styles lorsqu'il est focus */
+    outline: 1px solid #007bff;
+    outline-offset: -1px;
+}
+
+/*----------------------------------------------------------*/
+.custom-file-input:disabled ~ .custom-file-label::after {
+    /* Styles lorsqu'il est désactivé */
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+ion-toast.custom-toast {
+    --background: #f4f4fa;
+    --box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.2);
+    --color: #4b4a50;
+    margin-bottom: 100px;
+}
+
+ion-toast.custom-toast::part(message) {
+    font-style: normal;
+}
+
+ion-toast.custom-toast::part(button) {
+    border-left: 1px solid #d2d2d2;
+    color: #030207;
+    font-size: 15px;
+}
+

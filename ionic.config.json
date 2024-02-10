@@ -1,0 +1,12 @@
+{
+  "name": "Tomobil",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite",
+  "server": {
+    "port": 8100,
+    "host": "localhost"
+  }
+}
+

@@ -1,0 +1,10 @@
+.custom-image {
+    width: 100%; /* ajustez la taille en fonction de vos besoins */
+    height: 250px; /* cela maintiendra le ratio de l'image */
+}
+
+.ion-chip-container {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}

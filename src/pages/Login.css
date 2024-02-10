@@ -1,0 +1,35 @@
+ion-content {
+  --background: #ffffff;
+  --color: #444343;
+  font-size: 13px;
+  align-items: center;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+
+}
+
+.custom-input {
+  height: 50px;
+  width: 100%;
+  font-size: 12px;
+  border-radius: 10px;
+  border: none;
+  /*background-color: #1f436c;*/
+  /*color: #eaeaea;*/
+}
+
+ion-button {
+  --background: #1f436c;
+}
+
+
+.label {
+  text-align: center;
+  font-size: 12px;
+}
+
